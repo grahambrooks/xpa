@@ -1,0 +1,24 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_binary", "go_library", "go_test")
+
+go_library(
+    name = "parser_lib",
+    srcs = ["main.go"],
+    importpath = "github.com/grahambrooks/xpath-parser/parser",
+    visibility = ["//visibility:private"],
+    deps = [
+        "//parser/xpath",
+    ],
+)
+
+go_binary(
+    name = "parser",
+    embed = [":parser_lib"],
+    visibility = ["//visibility:public"],
+)
+
+go_test(
+    name = "parser_test",
+    srcs = ["main_test.go"],
+    embed = [":parser_lib"],
+    deps = ["//parser/xpath"],
+)
