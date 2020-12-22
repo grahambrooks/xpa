@@ -1,0 +1,21 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+load("@rules_antlr//antlr:antlr4.bzl", antlr4 = "antlr")
+
+antlr4(
+    name = "grammar",
+    srcs = ["XPath31.g4"],
+    language = "Go",
+    layout = "/XPath31",
+    package = "XPath31",
+)
+
+# keep
+go_library(
+    name = "XPath31",
+    srcs = [":grammar"],
+    importpath = "github.com/grahambrooks/xpa/pkg/xpa/XPath31",
+    visibility = ["//visibility:public"],
+    deps = [
+        "@com_github_antlr_antlr4//runtime/Go/antlr",
+    ],
+)

@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/grahambrooks/xpath-parser/parser/xpath"
+	"github.com/grahambrooks/xpa/pkg/xpa"
 	"testing"
 )
 
@@ -16,8 +16,11 @@ func TestTheParser(t *testing.T) {
 	}
 	for _, test := range tests {
 		t.Run(test.xpath, func(t *testing.T) {
-			parser := xpath.Parser{}
-			parser.Parse(test.xpath)
+			analyser := xpa.Analyser{}
+			_, err := analyser.Analyse(test.xpath)
+			if err !=nil {
+				t.Fail()
+			}
 		})
 	}
 }

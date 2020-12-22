@@ -1,4 +1,4 @@
 load("@bazel_gazelle//:def.bzl", "gazelle")
 
-# gazelle:prefix github.com/grahambrooks/xpath-parser
+# gazelle:prefix github.com/grahambrooks/xpa
 gazelle(name = "gazelle")

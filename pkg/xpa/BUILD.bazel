@@ -1,0 +1,21 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library", "go_test")
+
+go_library(
+    name = "xpa",
+    srcs = [
+        "listener.go",
+        "parser.go",
+    ],
+    importpath = "github.com/grahambrooks/xpa/pkg/xpa",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//pkg/xpa/grammar:XPath31",
+        "@com_github_antlr_antlr4//runtime/Go/antlr",
+    ],
+)
+
+go_test(
+    name = "xpa_test",
+    srcs = ["parser_test.go"],
+    embed = [":xpa"],
+)

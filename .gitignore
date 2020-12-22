@@ -2,4 +2,5 @@
 bazel-bin
 bazel-out
 bazel-testlogs
-bazel-xpath-parser
+bazel-xpa
+bazel-xpa-parser

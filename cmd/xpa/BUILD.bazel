@@ -1,0 +1,38 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_binary", "go_library", "go_test")
+
+go_binary(
+    name = "xpa",
+    embed = [":xpa_lib"],
+    visibility = ["//visibility:public"],
+)
+
+go_library(
+    name = "xpa_lib",
+    srcs = [
+        "main.go",
+        "output_format.go",
+        "xpa_command.go",
+    ],
+    importpath = "github.com/grahambrooks/xpa/cmd/xpa",
+    visibility = ["//visibility:private"],
+    deps = [
+        "//pkg/xpa",
+        "@com_github_fatih_color//:color",
+        "@com_github_spf13_cobra//:cobra",
+    ],
+)
+
+go_test(
+    name = "xpa_test",
+    srcs = ["main_test.go"],
+    embed = [":xpa_lib"],
+    deps = ["//pkg/xpa"],
+)
+
+load("@com_github_google_rules_install//installer:def.bzl", "installer")
+
+installer(
+    name = "install",
+    data = [":xpa"],
+    executable = True,
+)
