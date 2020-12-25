@@ -1,12 +1,7 @@
 # XPath Analyser
 
-![GitHub repo size](https://img.shields.io/github/grahambrooks/xpa/README.md)
-<!--
-![GitHub contributors]()
-![GitHub stars]()
-![GitHub forks]()
-![Twitter Follow]()
--->
+![GitHub repo size](https://img.shields.io/github/repo-size/grahambrooks/xpa) [Last Updated](https://img.shields.io/github/last-commit/grahambrooks/xpa)
+
 [XPath](https://www.w3.org/2002/11/xquery-xpath-applets/xpath-bnf.html) Analyser (XPA) is a tool that analyses XPath Expressions for people working with large number or complex XML Stylesheets.
 XPA reads one or more xpath expressions and calculates the number of tokens, function calls and expression changes in the xpath expression.
 
