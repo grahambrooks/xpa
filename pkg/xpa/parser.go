@@ -51,10 +51,8 @@ func (c *CustomErrorHandler) Error() error {
 
 func (*Analyser) Analyse(text string) (*Analysis, error) {
 	trace = func(format string, args ...interface{}) {}
-	stream := antlr.NewInputStream(text)
-	lexer := XPath31.NewXPath31Lexer(stream)
-	tokenstream := antlr.NewCommonTokenStream(lexer, antlr.TokenDefaultChannel)
-	parser := XPath31.NewXPath31Parser(tokenstream)
+	lexer := XPath31.NewXPath31Lexer(antlr.NewInputStream(text))
+	parser := XPath31.NewXPath31Parser(antlr.NewCommonTokenStream(lexer, antlr.TokenDefaultChannel))
 	errorHandler := CustomErrorHandler{}
 	parser.AddErrorListener(&errorHandler)
 
