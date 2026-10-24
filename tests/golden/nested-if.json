@@ -1,0 +1,7 @@
+{
+  "terminal_count": 16,
+  "comparison_change": 0,
+  "boolean_operator_change": 0,
+  "function_call_count": 0,
+  "pattern": "if (a) then if (b) then 1 else 2 else 3"
+}

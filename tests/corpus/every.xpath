@@ -1,0 +1,1 @@
+every $x in a, $y in b satisfies $x < $y

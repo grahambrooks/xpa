@@ -1,0 +1,7 @@
+{
+  "terminal_count": 26,
+  "comparison_change": 0,
+  "boolean_operator_change": 0,
+  "function_call_count": 0,
+  "pattern": "(a eq b, a ne b, a lt b, a le b, a gt b, a ge b)"
+}

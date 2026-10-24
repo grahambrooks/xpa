@@ -1,0 +1,1 @@
+(node(), text(), comment(), namespace-node(), element(), element(a), element(*, t?), attribute(a, xs:string), attribute(*), schema-element(a), schema-attribute(a), document-node(element(a)), document-node(), processing-instruction('x'), processing-instruction())

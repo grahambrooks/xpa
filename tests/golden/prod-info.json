@@ -1,0 +1,7 @@
+{
+  "terminal_count": 58,
+  "comparison_change": 1,
+  "boolean_operator_change": 4,
+  "function_call_count": 2,
+  "pattern": "($prod_info/@S.ADAPTATIONID='ukpsl' and $prod_info/@S.VIEW='GLPCAFULL' and not(ancestor::tm or ancestor::entry)) or ($prod_info/@S.HPROD='811' and $prod_info/@S.VIEW='GNBFULL' and not(ancestor::tm or ancestor::entry))"
+}

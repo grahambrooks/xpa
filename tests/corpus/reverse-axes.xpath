@@ -1,0 +1,1 @@
+parent::a/ancestor::b/preceding-sibling::c/preceding::d/ancestor-or-self::e

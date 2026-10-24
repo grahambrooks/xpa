@@ -1,0 +1,1 @@
+function($a as xs:int) as xs:int { $a + 1 }

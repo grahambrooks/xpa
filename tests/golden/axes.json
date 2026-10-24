@@ -1,0 +1,7 @@
+{
+  "terminal_count": 32,
+  "comparison_change": 0,
+  "boolean_operator_change": 0,
+  "function_call_count": 0,
+  "pattern": "child::a/descendant::b/attribute::c/self::d/descendant-or-self::e/following-sibling::f/following::g/namespace::h"
+}

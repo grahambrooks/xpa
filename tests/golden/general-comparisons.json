@@ -1,0 +1,7 @@
+{
+  "terminal_count": 12,
+  "comparison_change": 3,
+  "boolean_operator_change": 2,
+  "function_call_count": 0,
+  "pattern": "1 < 2 and 2 > 1 or 3 = 3"
+}
