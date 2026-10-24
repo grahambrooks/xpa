@@ -1,0 +1,535 @@
+tests/corpus/names-with-dots.xpath
+  s_208303aeb52eb6::t_d7002347f76ede 1
+tests/golden/decimal-trailing-dot.json
+  s_208303aeb52eb6::t_d7002347f76ede 1-7
+tests/golden/arrow-chain.json
+  s_208303aeb52eb6::t_d7002347f76ede 1-7
+tests/golden/double-forms.json
+  s_208303aeb52eb6::t_d7002347f76ede 1-7
+tests/golden/empty-call.json
+  s_208303aeb52eb6::t_d7002347f76ede 1-7
+tests/golden/root-star.json
+  s_208303aeb52eb6::t_d7002347f76ede 1-7
+tests/corpus/empty-sequence.xpath
+  s_208303aeb52eb6::t_d7002347f76ede 1
+tests/golden/inline-function-empty.json
+  s_208303aeb52eb6::t_d7002347f76ede 1-7
+tests/golden/empty-sequence.json
+  s_208303aeb52eb6::t_d7002347f76ede 1-7
+tests/golden/general-comparisons.json
+  s_208303aeb52eb6::t_d7002347f76ede 1-7
+tests/corpus/readme-bookstore.xpath
+  s_208303aeb52eb6::t_d7002347f76ede 1
+tests/corpus/reject-unclosed-paren.xpath
+  s_208303aeb52eb6::t_d7002347f76ede 1
+tests/corpus/unary-in-expr.xpath
+  s_208303aeb52eb6::t_d7002347f76ede 1
+tests/golden/sequence-filter.json
+  s_208303aeb52eb6::t_d7002347f76ede 1-7
+tests/corpus/cast.xpath
+  s_208303aeb52eb6::t_d7002347f76ede 1
+tests/golden/prod-info.json
+  s_208303aeb52eb6::t_d7002347f76ede 1-7
+tests/corpus/parenthesized-itemtype.xpath
+  s_208303aeb52eb6::t_d7002347f76ede 1
+tests/corpus/root-star.xpath
+  s_208303aeb52eb6::t_d7002347f76ede 1
+tests/golden/reject-exponent.json
+  s_208303aeb52eb6::t_d7002347f76ede 1-3
+tests/corpus/prod-info.xpath
+  s_208303aeb52eb6::t_d7002347f76ede 1
+tests/golden/reject-item-call.json
+  s_208303aeb52eb6::t_d7002347f76ede 1-3
+tests/corpus/dynamic-call.xpath
+  s_208303aeb52eb6::t_d7002347f76ede 1
+tests/corpus/paren-context.xpath
+  s_208303aeb52eb6::t_d7002347f76ede 1
+tests/corpus/whitespace.xpath
+  s_208303aeb52eb6::t_d7002347f76ede 1-2
+tests/golden/if.json
+  s_208303aeb52eb6::t_d7002347f76ede 1-7
+tests/golden/map-test.json
+  s_208303aeb52eb6::t_d7002347f76ede 1-7
+tests/golden/every.json
+  s_208303aeb52eb6::t_d7002347f76ede 1-7
+tests/golden/arithmetic.json
+  s_208303aeb52eb6::t_d7002347f76ede 1-7
+tests/golden/let.json
+  s_208303aeb52eb6::t_d7002347f76ede 1-7
+tests/golden/parenthesized-itemtype.json
+  s_208303aeb52eb6::t_d7002347f76ede 1-7
+tests/corpus/id-attribute.xpath
+  s_208303aeb52eb6::t_d7002347f76ede 1
+tests/golden/id-attribute.json
+  s_208303aeb52eb6::t_d7002347f76ede 1-7
+tests/corpus/function-test-typed.xpath
+  s_208303aeb52eb6::t_d7002347f76ede 1
+tests/golden/text-test.json
+  s_208303aeb52eb6::t_d7002347f76ede 1-7
+tests/golden/reject-if-call.json
+  s_208303aeb52eb6::t_d7002347f76ede 1-3
+tests/corpus/map-test-any.xpath
+  s_208303aeb52eb6::t_d7002347f76ede 1
+tests/golden/context.json
+  s_208303aeb52eb6::t_d7002347f76ede 1-7
+tests/golden/comparison-repeat.json
+  s_208303aeb52eb6::t_d7002347f76ede 1-7
+tests/corpus/instance-of-star-ambiguous.xpath
+  s_208303aeb52eb6::t_d7002347f76ede 1
+tests/golden/parent.json
+  s_208303aeb52eb6::t_d7002347f76ede 1-7
+tests/corpus/inline-function.xpath
+  s_208303aeb52eb6::t_d7002347f76ede 1
+tests/golden/names-with-dots.json
+  s_208303aeb52eb6::t_d7002347f76ede 1-7
+tests/golden/var-minus.json
+  s_208303aeb52eb6::t_d7002347f76ede 1-7
+tests/corpus/reject-semicolon.xpath
+  s_208303aeb52eb6::t_d7002347f76ede 1
+tests/corpus/array-curly.xpath
+  s_208303aeb52eb6::t_d7002347f76ede 1
+tests/corpus/reverse-axes.xpath
+  s_208303aeb52eb6::t_d7002347f76ede 1
+tests/corpus/uri-qualified-empty.xpath
+  s_208303aeb52eb6::t_d7002347f76ede 1
+tests/corpus/minus-spaced.xpath
+  s_208303aeb52eb6::t_d7002347f76ede 1
+tests/corpus/reject-array-call.xpath
+  s_208303aeb52eb6::t_d7002347f76ede 1
+tests/corpus/unary-lookup-int.xpath
+  s_208303aeb52eb6::t_d7002347f76ede 1
+tests/golden/unary-lookup-int.json
+  s_208303aeb52eb6::t_d7002347f76ede 1-7
+tests/golden/or-as-element.json
+  s_208303aeb52eb6::t_d7002347f76ede 1-7
+tests/corpus/var-minus.xpath
+  s_208303aeb52eb6::t_d7002347f76ede 1
+tests/golden/for.json
+  s_208303aeb52eb6::t_d7002347f76ede 1-7
+tests/golden/array-square.json
+  s_208303aeb52eb6::t_d7002347f76ede 1-7
+tests/corpus/arrow-paren.xpath
+  s_208303aeb52eb6::t_d7002347f76ede 1
+tests/corpus/empty-sequence-expr.xpath
+  s_208303aeb52eb6::t_d7002347f76ede 1
+tests/corpus/and-chain.xpath
+  s_208303aeb52eb6::t_d7002347f76ede 1
+tests/corpus/call-chain.xpath
+  s_208303aeb52eb6::t_d7002347f76ede 1
+tests/corpus/readme-bookstore-stdin.xpath
+  s_208303aeb52eb6::t_d7002347f76ede 1
+tests/corpus/braced-uri-wildcard.xpath
+  s_208303aeb52eb6::t_d7002347f76ede 1
+tests/corpus/intersect-except.xpath
+  s_208303aeb52eb6::t_d7002347f76ede 1
+tests/golden/keyword-names.json
+  s_208303aeb52eb6::t_d7002347f76ede 1-7
+tests/golden/map.json
+  s_208303aeb52eb6::t_d7002347f76ede 1-7
+tests/golden/unary-in-expr.json
+  s_208303aeb52eb6::t_d7002347f76ede 1-7
+tests/golden/union.json
+  s_208303aeb52eb6::t_d7002347f76ede 1-7
+tests/corpus/castable.xpath
+  s_208303aeb52eb6::t_d7002347f76ede 1
+tests/golden/some.json
+  s_208303aeb52eb6::t_d7002347f76ede 1-7
+tests/corpus/union.xpath
+  s_208303aeb52eb6::t_d7002347f76ede 1
+tests/golden/minus-spaced.json
+  s_208303aeb52eb6::t_d7002347f76ede 1-7
+tests/golden/dynamic-call.json
+  s_208303aeb52eb6::t_d7002347f76ede 1-7
+tests/corpus/reject-colons.xpath
+  s_208303aeb52eb6::t_d7002347f76ede 1
+tests/corpus/root.xpath
+  s_208303aeb52eb6::t_d7002347f76ede 1
+tests/corpus/descendant.xpath
+  s_208303aeb52eb6::t_d7002347f76ede 1
+tests/golden/readme-bookstore-stdin.json
+  s_208303aeb52eb6::t_d7002347f76ede 1-7
+tests/corpus/placeholder.xpath
+  s_208303aeb52eb6::t_d7002347f76ede 1
+tests/corpus/string-double-caret.xpath
+  s_208303aeb52eb6::t_d7002347f76ede 1
+tests/golden/and-function.json
+  s_208303aeb52eb6::t_d7002347f76ede 1-7
+tests/corpus/map-empty.xpath
+  s_208303aeb52eb6::t_d7002347f76ede 1
+tests/golden/map-test-any.json
+  s_208303aeb52eb6::t_d7002347f76ede 1-7
+tests/golden/to-element.json
+  s_208303aeb52eb6::t_d7002347f76ede 1-3
+tests/golden/empty-sequence-expr.json
+  s_208303aeb52eb6::t_d7002347f76ede 1-7
+tests/golden/root-div.json
+  s_208303aeb52eb6::t_d7002347f76ede 1-7
+tests/golden/inline-function.json
+  s_208303aeb52eb6::t_d7002347f76ede 1-7
+tests/golden/reject-two-names.json
+  s_208303aeb52eb6::t_d7002347f76ede 1-3
+tests/golden/string-double-caret.json
+  s_208303aeb52eb6::t_d7002347f76ede 1-7
+tests/golden/placeholder.json
+  s_208303aeb52eb6::t_d7002347f76ede 1-7
+tests/golden/path-sequence.json
+  s_208303aeb52eb6::t_d7002347f76ede 1-7
+tests/corpus/range.xpath
+  s_208303aeb52eb6::t_d7002347f76ede 1
+tests/golden/braced-uri-wildcard.json
+  s_208303aeb52eb6::t_d7002347f76ede 1-7
+tests/corpus/atomic-keyword-type.xpath
+  s_208303aeb52eb6::t_d7002347f76ede 1
+tests/corpus/reject-map-call.xpath
+  s_208303aeb52eb6::t_d7002347f76ede 1
+tests/golden/reject-unclosed-comment.json
+  s_208303aeb52eb6::t_d7002347f76ede 1-3
+tests/corpus/lookup-star.xpath
+  s_208303aeb52eb6::t_d7002347f76ede 1
+tests/corpus/node-comparisons.xpath
+  s_208303aeb52eb6::t_d7002347f76ede 1
+tests/corpus/string-chain-invalid.xpath
+  s_208303aeb52eb6::t_d7002347f76ede 1
+tests/corpus/arrow-var.xpath
+  s_208303aeb52eb6::t_d7002347f76ede 1
+tests/golden/arrow-var.json
+  s_208303aeb52eb6::t_d7002347f76ede 1-7
+tests/corpus/arrow.xpath
+  s_208303aeb52eb6::t_d7002347f76ede 1
+tests/corpus/array-test.xpath
+  s_208303aeb52eb6::t_d7002347f76ede 1
+tests/golden/reject-unclosed-paren.json
+  s_208303aeb52eb6::t_d7002347f76ede 1-3
+tests/golden/root-and.json
+  s_208303aeb52eb6::t_d7002347f76ede 1-7
+tests/corpus/keyword-steps.xpath
+  s_208303aeb52eb6::t_d7002347f76ede 1
+tests/corpus/decimal-trailing-dot.xpath
+  s_208303aeb52eb6::t_d7002347f76ede 1
+tests/corpus/comment.xpath
+  s_208303aeb52eb6::t_d7002347f76ede 1
+tests/golden/all-general.json
+  s_208303aeb52eb6::t_d7002347f76ede 1-7
+tests/golden/reject-colons.json
+  s_208303aeb52eb6::t_d7002347f76ede 1-3
+tests/corpus/double-forms.xpath
+  s_208303aeb52eb6::t_d7002347f76ede 1
+tests/corpus/every.xpath
+  s_208303aeb52eb6::t_d7002347f76ede 1
+tests/corpus/reject-unclosed-comment.xpath
+  s_208303aeb52eb6::t_d7002347f76ede 1
+tests/golden/dot-slash.json
+  s_208303aeb52eb6::t_d7002347f76ede 1-7
+tests/corpus/general-comparisons.xpath
+  s_208303aeb52eb6::t_d7002347f76ede 1
+tests/golden/function-test-typed.json
+  s_208303aeb52eb6::t_d7002347f76ede 1-7
+tests/corpus/comment-nested.xpath
+  s_208303aeb52eb6::t_d7002347f76ede 1
+tests/corpus/dot-slash.xpath
+  s_208303aeb52eb6::t_d7002347f76ede 1
+tests/golden/root-star-times.json
+  s_208303aeb52eb6::t_d7002347f76ede 1-7
+tests/corpus/root-star-times.xpath
+  s_208303aeb52eb6::t_d7002347f76ede 1
+tests/corpus/and-function.xpath
+  s_208303aeb52eb6::t_d7002347f76ede 1
+tests/corpus/to-element.xpath
+  s_208303aeb52eb6::t_d7002347f76ede 1
+tests/corpus/value-chain-invalid.xpath
+  s_208303aeb52eb6::t_d7002347f76ede 1
+tests/golden/reject-dot-space-int.json
+  s_208303aeb52eb6::t_d7002347f76ede 1-3
+tests/corpus/instance-of.xpath
+  s_208303aeb52eb6::t_d7002347f76ede 1
+tests/corpus/functions-nested.xpath
+  s_208303aeb52eb6::t_d7002347f76ede 1
+tests/golden/decimal-leading-dot.json
+  s_208303aeb52eb6::t_d7002347f76ede 1-7
+tests/golden/instance-of-plus-ambiguous.json
+  s_208303aeb52eb6::t_d7002347f76ede 1-7
+tests/golden/attribute-wildcard.json
+  s_208303aeb52eb6::t_d7002347f76ede 1-7
+tests/golden/array-curly.json
+  s_208303aeb52eb6::t_d7002347f76ede 1-7
+tests/golden/double.json
+  s_208303aeb52eb6::t_d7002347f76ede 1-7
+tests/corpus/arrow-chain.xpath
+  s_208303aeb52eb6::t_d7002347f76ede 1
+tests/golden/kind-test-path.json
+  s_208303aeb52eb6::t_d7002347f76ede 1-7
+tests/corpus/unary.xpath
+  s_208303aeb52eb6::t_d7002347f76ede 1
+tests/golden/and-or-alternating.json
+  s_208303aeb52eb6::t_d7002347f76ede 1-7
+tests/golden/mixed-comparisons.json
+  s_208303aeb52eb6::t_d7002347f76ede 1-7
+tests/golden/root.json
+  s_208303aeb52eb6::t_d7002347f76ede 1-7
+tests/corpus/instance-of-plus-ambiguous.xpath
+  s_208303aeb52eb6::t_d7002347f76ede 1
+tests/golden/star-names.json
+  s_208303aeb52eb6::t_d7002347f76ede 1-7
+tests/golden/value-chain-invalid.json
+  s_208303aeb52eb6::t_d7002347f76ede 1-3
+tests/golden/context-predicate.json
+  s_208303aeb52eb6::t_d7002347f76ede 1-7
+tests/corpus/unicode-name.xpath
+  s_208303aeb52eb6::t_d7002347f76ede 1
+tests/golden/for-alone.json
+  s_208303aeb52eb6::t_d7002347f76ede 1-7
+tests/golden/instance-of-star-ambiguous.json
+  s_208303aeb52eb6::t_d7002347f76ede 1-7
+tests/golden/predicates.json
+  s_208303aeb52eb6::t_d7002347f76ede 1-7
+tests/corpus/attribute-wildcard.xpath
+  s_208303aeb52eb6::t_d7002347f76ede 1
+tests/golden/lookup-paren.json
+  s_208303aeb52eb6::t_d7002347f76ede 1-7
+tests/corpus/fn-prefix.xpath
+  s_208303aeb52eb6::t_d7002347f76ede 1
+tests/corpus/simple-map.xpath
+  s_208303aeb52eb6::t_d7002347f76ede 1
+tests/golden/unary-leading-minus.json
+  s_208303aeb52eb6::t_d7002347f76ede 1-7
+tests/golden/unary.json
+  s_208303aeb52eb6::t_d7002347f76ede 1-7
+tests/corpus/star-names.xpath
+  s_208303aeb52eb6::t_d7002347f76ede 1
+tests/corpus/minus-minus-spaced.xpath
+  s_208303aeb52eb6::t_d7002347f76ede 1
+tests/corpus/root-and.xpath
+  s_208303aeb52eb6::t_d7002347f76ede 1
+tests/corpus/double.xpath
+  s_208303aeb52eb6::t_d7002347f76ede 1
+tests/corpus/reject-if-call.xpath
+  s_208303aeb52eb6::t_d7002347f76ede 1
+tests/corpus/reject-trailing-op.xpath
+  s_208303aeb52eb6::t_d7002347f76ede 1
+tests/corpus/value-comparisons.xpath
+  s_208303aeb52eb6::t_d7002347f76ede 1
+tests/corpus/lookup-paren.xpath
+  s_208303aeb52eb6::t_d7002347f76ede 1
+tests/corpus/comparison-repeat.xpath
+  s_208303aeb52eb6::t_d7002347f76ede 1
+tests/corpus/or-as-element.xpath
+  s_208303aeb52eb6::t_d7002347f76ede 1
+tests/corpus/root-div.xpath
+  s_208303aeb52eb6::t_d7002347f76ede 1
+tests/corpus/some.xpath
+  s_208303aeb52eb6::t_d7002347f76ede 1
+tests/corpus/if-element.xpath
+  s_208303aeb52eb6::t_d7002347f76ede 1
+tests/corpus/kind-test-path.xpath
+  s_208303aeb52eb6::t_d7002347f76ede 1
+tests/golden/call-chain.json
+  s_208303aeb52eb6::t_d7002347f76ede 1-7
+tests/corpus/unary-leading-minus.xpath
+  s_208303aeb52eb6::t_d7002347f76ede 1
+tests/golden/cast.json
+  s_208303aeb52eb6::t_d7002347f76ede 1-7
+tests/golden/lookup-star.json
+  s_208303aeb52eb6::t_d7002347f76ede 1-7
+tests/golden/intersect-except.json
+  s_208303aeb52eb6::t_d7002347f76ede 1-7
+tests/golden/minus-in-name.json
+  s_208303aeb52eb6::t_d7002347f76ede 1-7
+tests/corpus/and-or-alternating.xpath
+  s_208303aeb52eb6::t_d7002347f76ede 1
+tests/golden/double-minus.json
+  s_208303aeb52eb6::t_d7002347f76ede 1-7
+tests/golden/reject-semicolon.json
+  s_208303aeb52eb6::t_d7002347f76ede 1-3
+tests/golden/castable.json
+  s_208303aeb52eb6::t_d7002347f76ede 1-7
+tests/corpus/let.xpath
+  s_208303aeb52eb6::t_d7002347f76ede 1
+tests/golden/reject-map-call.json
+  s_208303aeb52eb6::t_d7002347f76ede 1-3
+tests/golden/reverse-axes.json
+  s_208303aeb52eb6::t_d7002347f76ede 1-7
+tests/golden/lookup-int.json
+  s_208303aeb52eb6::t_d7002347f76ede 1-7
+tests/golden/simple-map.json
+  s_208303aeb52eb6::t_d7002347f76ede 1-7
+tests/golden/reject-trailing-op.json
+  s_208303aeb52eb6::t_d7002347f76ede 1-3
+tests/corpus/nested-if.xpath
+  s_208303aeb52eb6::t_d7002347f76ede 1
+tests/golden/nested-if.json
+  s_208303aeb52eb6::t_d7002347f76ede 1-7
+tests/golden/reject-for-incomplete.json
+  s_208303aeb52eb6::t_d7002347f76ede 1-3
+tests/corpus/map-test.xpath
+  s_208303aeb52eb6::t_d7002347f76ede 1
+tests/corpus/path-sequence.xpath
+  s_208303aeb52eb6::t_d7002347f76ede 1
+tests/corpus/arithmetic.xpath
+  s_208303aeb52eb6::t_d7002347f76ede 1
+tests/corpus/decimal-leading-dot.xpath
+  s_208303aeb52eb6::t_d7002347f76ede 1
+tests/corpus/inline-function-empty.xpath
+  s_208303aeb52eb6::t_d7002347f76ede 1
+tests/corpus/predicates.xpath
+  s_208303aeb52eb6::t_d7002347f76ede 1
+tests/corpus/map.xpath
+  s_208303aeb52eb6::t_d7002347f76ede 1
+tests/corpus/named-function-ref.xpath
+  s_208303aeb52eb6::t_d7002347f76ede 1
+tests/corpus/reject-item-call.xpath
+  s_208303aeb52eb6::t_d7002347f76ede 1
+tests/golden/uri-qualified-empty.json
+  s_208303aeb52eb6::t_d7002347f76ede 1-7
+tests/corpus/minus-in-name.xpath
+  s_208303aeb52eb6::t_d7002347f76ede 1
+tests/golden/reject-empty.json
+  s_208303aeb52eb6::t_d7002347f76ede 1-3
+tests/golden/and-chain.json
+  s_208303aeb52eb6::t_d7002347f76ede 1-7
+tests/golden/instance-of-star.json
+  s_208303aeb52eb6::t_d7002347f76ede 1-7
+tests/corpus/reject-two-names.xpath
+  s_208303aeb52eb6::t_d7002347f76ede 1
+tests/golden/comment.json
+  s_208303aeb52eb6::t_d7002347f76ede 1-7
+tests/golden/concat.json
+  s_208303aeb52eb6::t_d7002347f76ede 1-7
+tests/corpus/sequence-filter.xpath
+  s_208303aeb52eb6::t_d7002347f76ede 1
+tests/golden/reject-double-slash-alone.json
+  s_208303aeb52eb6::t_d7002347f76ede 1-3
+tests/corpus/for.xpath
+  s_208303aeb52eb6::t_d7002347f76ede 1
+tests/golden/dot-dot-slash.json
+  s_208303aeb52eb6::t_d7002347f76ede 1-7
+tests/corpus/string-caret.xpath
+  s_208303aeb52eb6::t_d7002347f76ede 1
+tests/golden/descendant.json
+  s_208303aeb52eb6::t_d7002347f76ede 1-7
+tests/golden/array-test.json
+  s_208303aeb52eb6::t_d7002347f76ede 1-7
+tests/golden/axes.json
+  s_208303aeb52eb6::t_d7002347f76ede 1-7
+tests/golden/comment-nested.json
+  s_208303aeb52eb6::t_d7002347f76ede 1-7
+tests/golden/named-function-ref.json
+  s_208303aeb52eb6::t_d7002347f76ede 1-7
+tests/golden/atomic-keyword-type.json
+  s_208303aeb52eb6::t_d7002347f76ede 1-7
+tests/golden/instance-of.json
+  s_208303aeb52eb6::t_d7002347f76ede 1-7
+tests/golden/unary-leading-minus-var.json
+  s_208303aeb52eb6::t_d7002347f76ede 1-7
+tests/golden/node-comparisons.json
+  s_208303aeb52eb6::t_d7002347f76ede 1-7
+tests/corpus/axes.xpath
+  s_208303aeb52eb6::t_d7002347f76ede 1
+tests/corpus/for-alone.xpath
+  s_208303aeb52eb6::t_d7002347f76ede 1
+tests/corpus/reject-exponent.xpath
+  s_208303aeb52eb6::t_d7002347f76ede 1
+tests/corpus/reject-for-incomplete.xpath
+  s_208303aeb52eb6::t_d7002347f76ede 1
+tests/corpus/array-square.xpath
+  s_208303aeb52eb6::t_d7002347f76ede 1
+tests/golden/keyword-steps.json
+  s_208303aeb52eb6::t_d7002347f76ede 1-7
+tests/corpus/div-names.xpath
+  s_208303aeb52eb6::t_d7002347f76ede 1
+tests/corpus/unary-leading-minus-var.xpath
+  s_208303aeb52eb6::t_d7002347f76ede 1
+tests/golden/function-test-any.json
+  s_208303aeb52eb6::t_d7002347f76ede 1-7
+tests/golden/if-element.json
+  s_208303aeb52eb6::t_d7002347f76ede 1-7
+tests/golden/string-caret.json
+  s_208303aeb52eb6::t_d7002347f76ede 1-7
+tests/golden/string-chain-invalid.json
+  s_208303aeb52eb6::t_d7002347f76ede 1-3
+tests/corpus/comparison-chain-invalid.xpath
+  s_208303aeb52eb6::t_d7002347f76ede 1
+tests/golden/unicode-name.json
+  s_208303aeb52eb6::t_d7002347f76ede 1-7
+tests/corpus/keyword-names.xpath
+  s_208303aeb52eb6::t_d7002347f76ede 1
+tests/golden/map-empty.json
+  s_208303aeb52eb6::t_d7002347f76ede 1-7
+tests/corpus/if.xpath
+  s_208303aeb52eb6::t_d7002347f76ede 1
+tests/corpus/lookup-int.xpath
+  s_208303aeb52eb6::t_d7002347f76ede 1
+tests/golden/arrow.json
+  s_208303aeb52eb6::t_d7002347f76ede 1-7
+tests/golden/functions-nested.json
+  s_208303aeb52eb6::t_d7002347f76ede 1-7
+tests/golden/readme-bookstore.json
+  s_208303aeb52eb6::t_d7002347f76ede 1-7
+tests/corpus/reject-dot-space-int.xpath
+  s_208303aeb52eb6::t_d7002347f76ede 1
+tests/corpus/kind-tests.xpath
+  s_208303aeb52eb6::t_d7002347f76ede 1
+tests/golden/whitespace.json
+  s_208303aeb52eb6::t_d7002347f76ede 1-7
+tests/golden/minus-minus-spaced.json
+  s_208303aeb52eb6::t_d7002347f76ede 1-7
+tests/golden/arrow-paren.json
+  s_208303aeb52eb6::t_d7002347f76ede 1-7
+tests/corpus/context-predicate.xpath
+  s_208303aeb52eb6::t_d7002347f76ede 1
+tests/corpus/dot-dot-slash.xpath
+  s_208303aeb52eb6::t_d7002347f76ede 1
+tests/corpus/instance-of-star.xpath
+  s_208303aeb52eb6::t_d7002347f76ede 1
+tests/corpus/context.xpath
+  s_208303aeb52eb6::t_d7002347f76ede 1
+tests/corpus/text-test.xpath
+  s_208303aeb52eb6::t_d7002347f76ede 1
+tests/golden/fn-prefix.json
+  s_208303aeb52eb6::t_d7002347f76ede 1-7
+tests/golden/div-names.json
+  s_208303aeb52eb6::t_d7002347f76ede 1-7
+tests/golden/range.json
+  s_208303aeb52eb6::t_d7002347f76ede 1-7
+tests/corpus/double-minus.xpath
+  s_208303aeb52eb6::t_d7002347f76ede 1
+tests/corpus/parent.xpath
+  s_208303aeb52eb6::t_d7002347f76ede 1
+tests/golden/kind-tests.json
+  s_208303aeb52eb6::t_d7002347f76ede 1-7
+tests/golden/value-comparisons.json
+  s_208303aeb52eb6::t_d7002347f76ede 1-7
+tests/corpus/concat.xpath
+  s_208303aeb52eb6::t_d7002347f76ede 1
+tests/golden/comparison-chain-invalid.json
+  s_208303aeb52eb6::t_d7002347f76ede 1-3
+tests/golden/paren-context.json
+  s_208303aeb52eb6::t_d7002347f76ede 1-7
+tests/corpus/empty-call.xpath
+  s_208303aeb52eb6::t_d7002347f76ede 1
+tests/golden/reject-array-call.json
+  s_208303aeb52eb6::t_d7002347f76ede 1-3
+tests/corpus/reject-double-slash-alone.xpath
+  s_208303aeb52eb6::t_d7002347f76ede 1
+tests/corpus/mixed-comparisons.xpath
+  s_208303aeb52eb6::t_d7002347f76ede 1
+tests/corpus/all-general.xpath
+  s_208303aeb52eb6::t_d7002347f76ede 1
+tests/corpus/function-test-any.xpath
+  s_208303aeb52eb6::t_d7002347f76ede 1
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "dac0208fe9dba901c8341ae2a47ed1458fd460a6",
+  "prompts": {},
+  "sessions": {
+    "s_208303aeb52eb6": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "6db92900-1461-41f4-b089-a78fc3a38308",
+        "model": "claude-opus-5-5"
+      },
+      "human_author": "Graham Brooks <graham@grahambrooks.com>"
+    }
+  }
+}
