@@ -2,63 +2,51 @@
 
 ![GitHub repo size](https://img.shields.io/github/repo-size/grahambrooks/xpa) ![Last Updated](https://img.shields.io/github/last-commit/grahambrooks/xpa)
 
-[XPath](https://www.w3.org/2002/11/xquery-xpath-applets/xpath-bnf.html) Analyser (XPA) is a tool that analyses XPath Expressions for people working with large number or complex XML Stylesheets.
-XPA reads one or more xpath expressions and calculates the number of tokens, function calls and expression changes in the xpath expression.
+XPath Analyser (`xpa`) measures the complexity of [XPath 3.1](https://www.w3.org/TR/xpath-31/)
+expressions, for people working with large numbers of XSLT stylesheets or with
+complex ones. It reads one or more expressions and reports the number of
+tokens, function calls, and changes of comparison and boolean operator, plus a
+complexity score derived from them.
 
-The grammar is a slightly modified version from the [ANTLR example Grammars](https://github.com/antlr/grammars-v4/tree/master/xpath/xpath31) modified to support the Go ANTLR lexer/parser generator.
+## Installing
 
-## Prerequisites
-
-To build XPA you will need:
-* [bazel](https://bazel.build) yep that's it bazel will take care of downloading the tools or at least telling you what you need to install to build the project.
-* `git clone git@github.com:grahambrooks/xpa.git` or `git clone https://github.com/grahambrooks/undata.git` or `gh repo clone grahambrooks/xpa`
-Building
-
-```
-bazel build //...
-
+```shell
+brew trust --formula grahambrooks/xpa/xpa
+brew tap grahambrooks/xpa https://github.com/grahambrooks/xpa
+brew install grahambrooks/xpa/xpa
 ```
 
-Running the tests
+The formula lives in this repository rather than a separate `homebrew-xpa`
+tap, so `brew tap` needs the explicit URL. Homebrew 6 refuses to load
+formulae from an untrusted third-party tap, hence `brew trust` first. The
+formula appears with the first release.
 
+or from source, with a Rust toolchain:
+
+```shell
+git clone https://github.com/grahambrooks/xpa.git
+cd xpa
+make install            # builds and installs to /usr/local/bin (PREFIX=… to change)
 ```
-bazel test //...
 
-```
-
-## Installing xpa
-
-To install xpa, follow these steps:
-
-Installing is a little more tricky because bazel builds everything in a sandbax (which is a good thing IMO) but it does make locating and installing the compiled binary a little trickier.
-
-On my macOS machine the compiled binary can be found in `bazel-bin/cmd/xpa/xpa_/xpa` and then copied to a convenient location `/usr/local/bin`
-
-Once installed check out the help
-
-```
-xpa --help
-
-```
+Release binaries for macOS and Linux are attached to each
+[GitHub release](https://github.com/grahambrooks/xpa/releases).
 
 ## Using xpa
 
-You can pass in an Xpath expression on the command line
+Pass expressions as arguments:
 
-```
-pa --json-output "/bookstore/book[price>35]/price" 
-
-``` 
-
-or pipe to the input. The following outputs json format pipped into jq for a nicer display.
-
-```
-echo "/bookstore/book[price>35]/price" | xpa --json-output | jq 
+```shell
+xpa --json-output "/bookstore/book[price>35]/price"
 ```
 
-output:
+pipe one in:
+
+```shell
+echo "/bookstore/book[price>35]/price" | xpa --json-output | jq
+```
+
 ```json
-                      
 {
   "terminal_count": 12,
   "comparison_change": 1,
@@ -68,27 +56,41 @@ output:
 }
 ```
 
+or name files that each hold one expression. Without `--json-output`, a
+terminal gets a table and a pipe gets one line per expression:
+
+```
+complexity:         1
+function calls:     0
+boolean changes:    0
+comparison changes: 1
+tokens:             12
+pattern:            /bookstore/book[price>35]/price
+```
+
+`complexity` is comparison changes + 2 × function calls + 2 × boolean
+changes. [DESIGN.md](DESIGN.md) defines each metric exactly.
+
+An invalid expression is reported with its line and column, and `xpa` exits
+non-zero. Put `--` before an expression that starts with `-` (other than a
+negative number).
+
+## Building
+
+```shell
+make check    # fmt-check + clippy + tests
+make build    # release binary
+```
+
+The parser is hand-written Rust following the
+[ANTLR XPath 3.1 grammar](https://github.com/antlr/grammars-v4/tree/master/xpath/xpath31)
+in [`docs/XPath31.g4`](docs/XPath31.g4). `tests/golden` pins its metrics to
+the original Go implementation.
+
 ## Roadmap
 
-* Applying the xpath analysis to XSLT XML files to understand the complexity of the xpath expressions in the document.
-
-## Contributing to <project_name>
-
-To contribute to <project_name>, follow these steps:
-
-1. Fork this repository.
-2. Create a branch: `git checkout -b <branch_name>`.
-3. Make your changes and commit them: `git commit -m '<commit_message>'`
-4. Push to the original branch: `git push origin <project_name>/<location>`
-5. Create the pull request.
-
-Alternatively see the GitHub documentation on [creating a pull request](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request).
-
-## Contributors
-
-Thanks to the following people who have contributed to this project:
-
-* [@grahambrooks](https://github.com/grahambrooks) 📖
+* Apply the analysis to XSLT files, to show the complexity of the XPath
+  expressions in a stylesheet.
 
 ## Contact
 
@@ -96,4 +98,4 @@ Head over to the discussions page.
 
 ## License
 
-This project uses [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[MIT](LICENSE)

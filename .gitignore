@@ -1,7 +1,2 @@
-.ijwb
-bazel-bin
-bazel-out
-bazel-testlogs
-bazel-xpa
-bazel-xpa-parser
-.idea/
+/target
+.DS_Store
