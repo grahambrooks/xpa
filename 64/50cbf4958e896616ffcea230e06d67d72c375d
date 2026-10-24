@@ -1,0 +1,76 @@
+README.md
+  s_208303aeb52eb6::t_7e7ab8cd2d1428 14-15,19-22
+  s_208303aeb52eb6::t_ff0652f3f690b9 5-13,16,24,26-29,32-33,37,39-40,43,45-46,59-60,62-69,71-72,74-76,78,80-83,85-88,90,92-93,101
+.gitignore
+  s_208303aeb52eb6::t_e181c874679aec 1-2
+rust-toolchain.toml
+  s_208303aeb52eb6::t_6dca106af4869d 1-2,4
+  s_208303aeb52eb6::t_e2c03c45621760 3
+src/xpath/lexer.rs
+  s_208303aeb52eb6::t_54aa417868ef94 7
+  s_208303aeb52eb6::t_21c6dc018c5213 143-146,311-314,614-618
+  s_208303aeb52eb6::t_2e74501ad47ffb 370-374
+  s_208303aeb52eb6::t_c9ee726b079517 663
+  s_208303aeb52eb6::t_62ffa836500b10 514-519,523,525,527-528,547,551-555,557-560,562-563,565,568-570
+  s_208303aeb52eb6::t_73779cff58c70c 513,561
+  s_208303aeb52eb6::t_fc53341870f8ca 524,529,556
+  s_208303aeb52eb6::t_b44460a16e213f 548-550,664-665
+  s_208303aeb52eb6::t_ab6b3b283bd352 267,293-294,348-352,511-512,520-521
+  s_208303aeb52eb6::t_c7356aa3f5b420 522,530-546,566-567
+  s_208303aeb52eb6::t_5ce7c29396f540 662
+  s_208303aeb52eb6::t_3806f3d94660b7 1-6,8-142,147-266,268-292,295-310,315-347,353-369,375-510,526,564,571-613,619-661,669-676
+  s_208303aeb52eb6::t_0f73bd05b4c29f 666-668
+src/xpath/parser.rs
+  s_208303aeb52eb6::t_eba2a533108ef2 1-19,21-570,572-775,780-781,791-794,797-939,944-945
+  s_208303aeb52eb6::t_21c6dc018c5213 20,571,940-943
+  s_208303aeb52eb6::t_2e74501ad47ffb 776-779,782-790,795-796
+.github/workflows/ci.yml
+  s_208303aeb52eb6::t_2df4db7e779f7f 1-20
+src/main.rs
+  s_208303aeb52eb6::t_83f0983e6298c2 1-71,77
+  s_208303aeb52eb6::t_21c6dc018c5213 72-76
+Makefile
+  s_208303aeb52eb6::t_2df4db7e779f7f 1-5,8-58,60-86
+  s_208303aeb52eb6::t_ac9092652f2741 6-7,59
+tests/cli.rs
+  s_208303aeb52eb6::t_2df4db7e779f7f 1-51,56-97
+  s_208303aeb52eb6::t_21c6dc018c5213 52-55
+src/xpath/mod.rs
+  s_208303aeb52eb6::t_a9a1554f7810b1 1-32
+DESIGN.md
+  s_208303aeb52eb6::t_72a18b19c9db15 1-104
+src/analysis.rs
+  s_208303aeb52eb6::t_2e74501ad47ffb 30-34,36-38
+  s_208303aeb52eb6::t_c2c0e7b3fdc27c 1-29,35,39-55
+CLAUDE.md
+  s_208303aeb52eb6::t_67db693aa3adb3 1-72
+src/lib.rs
+  s_208303aeb52eb6::t_c2c0e7b3fdc27c 1-13
+src/output.rs
+  s_208303aeb52eb6::t_83f0983e6298c2 1-55,60-89
+  s_208303aeb52eb6::t_21c6dc018c5213 56-59
+tests/golden.rs
+  s_208303aeb52eb6::t_21c6dc018c5213 26-28
+  s_208303aeb52eb6::t_e181c874679aec 1-25,29-44
+Cargo.toml
+  s_208303aeb52eb6::t_6dca106af4869d 1-5,7-15
+  s_208303aeb52eb6::t_e2c03c45621760 6
+Cargo.lock
+  s_208303aeb52eb6::t_4b32f31c30959c 1-249
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "6450cbf4958e896616ffcea230e06d67d72c375d",
+  "prompts": {},
+  "sessions": {
+    "s_208303aeb52eb6": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "6db92900-1461-41f4-b089-a78fc3a38308",
+        "model": "claude-opus-5-5"
+      },
+      "human_author": "Graham Brooks <graham@grahambrooks.com>"
+    }
+  }
+}
