@@ -1,0 +1,23 @@
+.github/workflows/build.yml
+  s_c7db583e01ac64::t_1eec7525b2dad1 5-9,12,14-23
+MODULE.bazel
+  s_c7db583e01ac64::t_b3b895fd67d065 1-6
+MODULE.bazel.lock
+  s_c7db583e01ac64::t_e721b5990a2c04 1-193
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "b51579d5256bf702ee9e53eba7e057ee6cc7bce6",
+  "prompts": {},
+  "sessions": {
+    "s_c7db583e01ac64": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "a64f563f-ca61-4776-97cf-501db44bb230",
+        "model": "claude-opus-5-5"
+      },
+      "human_author": "Graham Brooks <graham@grahambrooks.com>"
+    }
+  }
+}
