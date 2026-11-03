@@ -46,7 +46,8 @@ Things worth knowing before editing the parser:
 ## Commands
 
 ```bash
-make check                 # fmt-check + clippy + test — the pre-commit gate
+make check                 # fmt-check + clippy + test — the CI check job
+make hooks                 # once: prek runs fmt on commit, make check on push
 cargo test --test golden   # parity with the Go implementation
 cargo run -- -j 'a and b'  # one expression, JSON
 ```
@@ -60,6 +61,9 @@ cargo run -- -j 'a and b'  # one expression, JSON
 - **CalVer** (`2026.10.24`). The tag is the version; release-kit v2 stamps
   it into `Cargo.toml` and updates `Formula/xpa.rb`. `version` stays `0.0.0`
   until the first release.
+- **`make release`** tags `origin/main` with the next CalVer and pushes only the
+  tag (release.mk, from release-kit); nothing is bumped or committed locally.
+  `make release-dry` previews it.
 - **`publish = false`.** No crates.io.
 - **MSRV tracks latest stable**, pinned in `rust-toolchain.toml`.
 

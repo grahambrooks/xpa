@@ -1,86 +1,56 @@
-.PHONY: help build test lint fmt fmt-check check pre-commit install uninstall clean update outdated release release-dry-run
-
-VERSION := $(shell date +%Y.%-m.%-d)
-TAG := v$(VERSION)
+# xpa — complexity metrics for XPath expressions.
+#
+# `make check` is the pre-push gate and runs exactly what the CI `check` job runs
+# (.github/workflows/ci.yml); `make hooks` wires it into git. Releases come from
+# release.mk (release-kit): `make release` tags origin/main and pushes the tag.
 PREFIX ?= /usr/local
 # Honours a target-dir set in ~/.cargo/config.toml, not just ./target.
-TARGET_DIR := $(shell cargo metadata --format-version 1 --no-deps | sed -n 's/.*"target_directory":"\([^"]*\)".*/\1/p')
+TARGET_DIR = $(shell cargo metadata --format-version 1 --no-deps | sed -n 's/.*"target_directory":"\([^"]*\)".*/\1/p')
+.DEFAULT_GOAL := help
 
-all: help
+.PHONY: help build test lint fmt fmt-check check pre-commit hooks install uninstall clean update outdated
 
-help:
-	@echo "xpa — complexity metrics for XPath expressions"
-	@echo ""
-	@echo "Usage: make [target]"
-	@echo ""
-	@echo "Development:"
-	@echo "  check            fmt-check + clippy + test (the pre-commit gate)"
-	@echo "  pre-commit       Alias for check; run before every commit"
-	@echo "  build            Build the release binary"
-	@echo "  test             Run all tests"
-	@echo "  lint             Run clippy with warnings denied"
-	@echo "  fmt              Format the code"
-	@echo ""
-	@echo "Installation:"
-	@echo "  install          Build and install to $(PREFIX)/bin"
-	@echo "  uninstall        Remove from $(PREFIX)/bin"
-	@echo ""
-	@echo "Release:"
-	@echo "  release          Tag and push a CalVer release ($(TAG))"
-	@echo "  release-dry-run  Show what a release would do"
-	@echo ""
-	@echo "Maintenance:"
-	@echo "  update           Update dependencies"
-	@echo "  outdated         Show outdated dependencies"
-	@echo "  clean            Remove build artifacts"
+help: ## List targets
+	@grep -hE '^[a-zA-Z0-9_-]+:.*## ' $(MAKEFILE_LIST) | awk -F':.*## ' '{ printf "  %-16s %s\n", $$1, $$2 }'
 
-build:
-	cargo build --release
-
-test:
-	cargo test
-
-lint:
-	cargo clippy --all-targets -- -D warnings
-
-fmt:
-	cargo fmt --all
-
-fmt-check:
-	cargo fmt --all -- --check
-
-check: fmt-check lint test
+check: fmt-check lint test ## The pre-push gate: the CI check job (fmt, clippy, test)
 	@echo "All pre-commit checks passed."
 
-pre-commit: check
+pre-commit: check ## Alias for check
 
-install: build
+build: ## Build the release binary
+	cargo build --release
+
+test: ## Tests, as CI runs them
+	cargo test --all-features --locked
+
+lint: ## Clippy with warnings denied, as CI runs it
+	cargo clippy --all-targets --all-features --locked -- -D warnings
+
+fmt: ## Format the code
+	cargo fmt --all
+
+fmt-check: ## Fail if the code is not formatted
+	cargo fmt --all --check
+
+hooks: ## Install the prek git hooks (pre-commit and pre-push)
+	prek install
+
+install: build ## Build and install to $(PREFIX)/bin
 	install -d $(PREFIX)/bin
 	install -m 755 $(TARGET_DIR)/release/xpa $(PREFIX)/bin/xpa
 	@echo "Installed $(PREFIX)/bin/xpa"
 
-uninstall:
+uninstall: ## Remove from $(PREFIX)/bin
 	rm -f $(PREFIX)/bin/xpa
 
-update:
+update: ## Update dependencies
 	cargo update
 
-outdated:
+outdated: ## Show outdated dependencies
 	cargo outdated --root-deps-only
 
-clean:
+clean: ## Remove build artifacts
 	cargo clean
 
-release-dry-run:
-	@echo "Would release $(TAG)"
-	@git status --porcelain
-
-release: check
-	@test -z "$$(git status --porcelain)" || (echo "working tree is dirty" && exit 1)
-	sed -i '' 's/^version = ".*"/version = "$(VERSION)"/' Cargo.toml
-	cargo check --quiet
-	git add Cargo.toml Cargo.lock
-	git commit -m "Release $(VERSION)"
-	git tag -a $(TAG) -m "Release $(VERSION)"
-	git push origin main
-	git push origin $(TAG)
+include release.mk

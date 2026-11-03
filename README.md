@@ -78,7 +78,8 @@ negative number).
 ## Building
 
 ```shell
-make check    # fmt-check + clippy + tests
+make check    # fmt-check + clippy + tests (what CI runs)
+make hooks    # install the git hooks (prek)
 make build    # release binary
 ```
 
